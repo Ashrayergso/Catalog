@@ -1,0 +1,66 @@
+.equipmentItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.equipmentItem img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.equipmentItem h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.equipmentItem p {
+    font-size: 16px;
+    color: #666;
+}
+
+.equipmentItem .details {
+    margin-bottom: 10px;
+}
+
+.equipmentItem .cost {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.equipmentItem .manufacturerNumber,
+.equipmentItem .model,
+.equipmentItem .type {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.equipmentItem .linkToProduct {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.equipmentItem .linkToProduct:hover {
+    text-decoration: underline;
+}
+
+.equipmentItem .quantityInput {
+    width: 50px;
+    margin-top: 10px;
+}
+
+.equipmentItem .searchButtons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}

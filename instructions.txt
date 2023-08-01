@@ -1,0 +1,19 @@
+# Instructions for Next.js App
+
+1. **Installation**: Make sure you have Node.js and npm installed on your machine. If not, download and install them from the official website. After that, navigate to the project directory and run `npm install` to install all the dependencies listed in the `package.json` file.
+
+2. **Running the App**: To start the application, use the command `npm run dev` in the terminal. This will start the Next.js development server on your local machine. You can access the application by opening your web browser and navigating to `http://localhost:3000`.
+
+3. **Using the App**: On the homepage, you will see a list of equipment. You can select any equipment from the list to view its details. You can also input a quantity for each item.
+
+4. **Exporting to Excel**: To export the selected equipment to an Excel file, click on the 'Export to Excel' button. This will generate an Excel file with the details of the selected equipment and their total cost.
+
+5. **Searching Online**: If you want to search for a selected equipment online, click on the 'Search Online' button. This will open a new tab in your browser with the search results.
+
+6. **Searching Alternatives**: If you want to search for alternatives to a selected equipment, click on the 'Search Alternatives' button. This will open a new tab in your browser with the search results.
+
+7. **Building for Production**: To build the application for production, use the command `npm run build`. This will create a `.next` folder with the production-ready version of the application.
+
+8. **Testing**: To run tests, use the command `npm run test`. This will run all the tests defined in the `__tests__` directory.
+
+Please refer to the `readme.txt` for more information about the application and the `requirements.txt` for the list of dependencies.
