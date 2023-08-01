@@ -1,22 +1,7 @@
-```typescript
-import axios from 'axios';
-
-const searchOnline = async (equipmentName: string) => {
-  const response = await axios.get(`https://www.google.com/search?q=${equipmentName}`);
-  if (response.status === 200) {
-    return {
-      success: true,
-      message: 'SEARCH_SUCCESS',
-      data: response.data
-    };
-  } else {
-    return {
-      success: false,
-      message: 'SEARCH_FAILED',
-      data: null
-    };
-  }
+const searchOnline = (equipmentName: string) => {
+  const query = encodeURIComponent(equipmentName);
+  const url = `https://www.google.com/search?q=${query}`;
+  window.open(url, '_blank');
 };
 
 export default searchOnline;
-```

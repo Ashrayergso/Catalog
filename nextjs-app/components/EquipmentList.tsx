@@ -1,26 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
 import EquipmentItem from './EquipmentItem';
-import { Equipment } from '../types/Equipment';
+import styles from '../styles/EquipmentList.module.css';
 
-interface EquipmentListProps {
-  equipmentData: Equipment[];
+interface Equipment {
+  name: string;
+  details: string;
+  cost: number;
+  description: string;
+  manufacturerNumber: string;
+  model: string;
+  type: string;
+  image: string;
+  link: string;
 }
 
-const EquipmentList: React.FC<EquipmentListProps> = ({ equipmentData }) => {
-  const [selectedEquipments, setSelectedEquipments] = useState<Equipment[]>([]);
+interface EquipmentListProps {
+  equipmentList: Equipment[];
+}
 
-  const handleSelectEquipment = (equipment: Equipment) => {
-    setSelectedEquipments([...selectedEquipments, equipment]);
-  };
-
+const EquipmentList: React.FC<EquipmentListProps> = ({ equipmentList }) => {
   return (
-    <div id="equipment-list">
-      {equipmentData.map((equipment) => (
-        <EquipmentItem
-          key={equipment.id}
-          equipment={equipment}
-          onSelectEquipment={handleSelectEquipment}
-        />
+    <div className={styles.equipmentList}>
+      {equipmentList.map((equipment, index) => (
+        <EquipmentItem key={index} equipment={equipment} />
       ))}
     </div>
   );

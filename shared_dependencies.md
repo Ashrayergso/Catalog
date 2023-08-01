@@ -1,46 +1,17 @@
 Shared Dependencies:
 
-1. Exported Variables:
-   - `equipmentList` in `EquipmentList.tsx`
-   - `equipmentItem` in `EquipmentItem.tsx`
-   - `exportToExcel` in `exportToExcel.ts`
-   - `searchOnline` in `searchOnline.ts`
+1. **Package.json**: This file will contain the dependencies for the Next.js application, including Next.js itself, TypeScript, and any other necessary libraries for server-side rendering, routing, and exporting to Excel.
 
-2. Data Schemas:
-   - `Equipment` in `types/Equipment.ts`
+2. **tsconfig.json**: This file will contain the configuration for TypeScript, which will be used across all TypeScript files (.tsx) in the project.
 
-3. ID Names of DOM Elements:
-   - `equipment-list` in `EquipmentList.tsx`
-   - `equipment-item` in `EquipmentItem.tsx`
-   - `export-button` in `ExportToExcelButton.tsx`
-   - `search-button` in `SearchOnlineButton.tsx`
-   - `alternative-search-button` in `AlternativeSearchButton.tsx`
-   - `quantity-input` in `QuantityInput.tsx`
+3. **Equipment Schema**: The equipment data schema will be shared across multiple components. This schema will include fields for name, details, cost, description, manufacturer number, model, type, image of the item, and link to product.
 
-4. Message Names:
-   - `EXPORT_SUCCESS` in `exportToExcel.ts`
-   - `SEARCH_SUCCESS` in `searchOnline.ts`
+4. **DOM Element IDs**: The JavaScript functions will interact with DOM elements such as the equipment list, individual equipment items, and the export, search, and quantity input buttons. These elements will need unique IDs that are shared across the relevant files.
 
-5. Function Names:
-   - `exportToExcel` in `exportToExcel.ts`
-   - `searchOnline` in `searchOnline.ts`
-   - `renderEquipmentList` in `EquipmentList.tsx`
-   - `renderEquipmentItem` in `EquipmentItem.tsx`
+5. **Function Names**: Functions for exporting to Excel, searching online, and searching for alternatives will be shared across multiple files. These functions will likely be defined in the utils files and imported into the component files where they are used.
 
-6. Shared Styles:
-   - `globals.css` is shared across all components
+6. **CSS Modules**: The CSS modules in the styles directory will be shared across the component files that require them. Each component will import its corresponding CSS module for styling.
 
-7. Shared Configurations:
-   - `tsconfig.json` for TypeScript configurations
-   - `next.config.js` for Next.js configurations
+7. **Message Names**: Any messages that are displayed to the user, such as errors or confirmations, will need to be consistent across the application. These message names will be shared across multiple files.
 
-8. Shared Dependencies:
-   - `package.json` lists all the shared dependencies for the project
-
-9. Shared Assets:
-   - Images in `public/images/` are shared across components
-
-10. Shared Components:
-    - `_app.tsx` and `_document.tsx` are shared across all pages in Next.js
-
-Note: The actual names may vary based on the implementation.
+8. **Requirements.txt, readme.txt, instructions.txt**: These files will contain information about the project and its dependencies, instructions for use, and any other necessary documentation. They will be shared with anyone who uses or contributes to the project.

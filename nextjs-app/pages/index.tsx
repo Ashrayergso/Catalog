@@ -1,19 +1,17 @@
 import React from 'react';
 import EquipmentList from '../components/EquipmentList';
-import ExportToExcelButton from '../components/ExportToExcelButton';
 import SearchOnlineButton from '../components/SearchOnlineButton';
-import AlternativeSearchButton from '../components/AlternativeSearchButton';
-import QuantityInput from '../components/QuantityInput';
+import SearchAlternativesButton from '../components/SearchAlternativesButton';
+import ExportToExcelButton from '../components/ExportToExcelButton';
 
 const Home: React.FC = () => {
   return (
     <div>
       <h1>Equipment Catalog</h1>
+      <SearchOnlineButton />
+      <SearchAlternativesButton />
       <EquipmentList />
       <ExportToExcelButton />
-      <SearchOnlineButton />
-      <AlternativeSearchButton />
-      <QuantityInput />
     </div>
   );
 };

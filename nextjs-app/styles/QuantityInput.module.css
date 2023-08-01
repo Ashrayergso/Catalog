@@ -1,0 +1,24 @@
+.quantityInput {
+    width: 50px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.quantityInput:focus {
+    border-color: #66afe9;
+    outline: none;
+}
+
+.quantityInput::-webkit-inner-spin-button,
+.quantityInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantityInput[type=number] {
+    -moz-appearance: textfield;
+}

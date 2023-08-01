@@ -1,8 +1,9 @@
 import React from 'react';
 import { exportToExcel } from '../utils/exportToExcel';
+import styles from '../styles/ExportToExcelButton.module.css';
 
 interface ExportToExcelButtonProps {
-  selectedEquipment: any[];
+  selectedEquipment: Array<any>;
 }
 
 const ExportToExcelButton: React.FC<ExportToExcelButtonProps> = ({ selectedEquipment }) => {
@@ -11,7 +12,7 @@ const ExportToExcelButton: React.FC<ExportToExcelButtonProps> = ({ selectedEquip
   };
 
   return (
-    <button id="export-button" onClick={handleExport}>
+    <button className={styles.button} onClick={handleExport}>
       Export to Excel
     </button>
   );

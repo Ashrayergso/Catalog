@@ -1,17 +1,18 @@
 import React from 'react';
 import { searchOnline } from '../utils/searchOnline';
+import styles from '../styles/SearchOnlineButton.module.css';
 
 interface SearchOnlineButtonProps {
-  equipmentItem: string;
+  equipmentName: string;
 }
 
-const SearchOnlineButton: React.FC<SearchOnlineButtonProps> = ({ equipmentItem }) => {
+const SearchOnlineButton: React.FC<SearchOnlineButtonProps> = ({ equipmentName }) => {
   const handleSearchOnline = () => {
-    searchOnline(equipmentItem);
+    searchOnline(equipmentName);
   };
 
   return (
-    <button id="search-button" onClick={handleSearchOnline}>
+    <button className={styles.button} onClick={handleSearchOnline}>
       Search Online
     </button>
   );

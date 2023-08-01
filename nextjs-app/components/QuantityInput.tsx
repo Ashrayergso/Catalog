@@ -15,7 +15,6 @@ const QuantityInput: React.FC<QuantityInputProps> = ({ onQuantityChange }) => {
 
   return (
     <input
-      id="quantity-input"
       type="number"
       min="1"
       value={quantity}
